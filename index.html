@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/move.js"></script>
+</head>
+<body>
+<!--视频弹出层-->
+<div class="video-wrap">
+    <div class="video-content">
+        <div class="video-title">
+            <img class="video-title-text" src="img/video-title.png" alt="title"/>
+            <img class="video-close-btn" src="img/close-video-btn.png" alt="close"/>
+        </div>
+        <div class="video-player-box">
+            <div class="video-play" id="playerDiv"></div>
+            <ul id="pagelist">
+                <li name="01644f9d-8f1f-40c6-ac1d-b37b6b97408b">视频7</li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!--分享层弹出-->
+<div class="share-box">
+<div class="share-icon-bg">
+    <div class="sns-share">
+        <ul class="share">
+            <li><a class="sina" href="javascript:;" rel="sina"></a></li>
+            <li><a class="qq-zone" href="javascript:;" rel="qzone"></a></li>
+            <li><a class="douBan" href="javascript:;" rel="douban"></a></li>
+        </ul>
+    </div>
+    <a class="share-close-btn" href="javascript:;"></a>
+</div>
+</div>
+<!--跟着屏幕滚动出来的按钮-->
+
+<div class="scrollBox" id="scrollBox">
+    <div class="return-top">返回顶部</div>
+    <div class="share"><i></i></div>
+</div>
+
+<!--头部区-->
+<div class="header" id="header">
+    <img class="top-img" id="top-img" src="img/top-img.jpg" alt="top" />
+    <div class="container top-container">
+        <img class="smileMove-text" src="img/smileMove-text.png" alt="smile-text"/>
+        <img class="watchTv-btn" src="img/watchTv-btn.png" alt="btn"/>
+        <img class="sfl-logo" src="img/SFL-logo.png" alt="丝芙兰logo"/>
+        <!--<img class="smile-logo" src="img/smile-logo-top.png" alt="logo"/>-->
+        <div id="down-btn" class="down-btn"><i></i><span>向下滚动</span></div>
+    </div>
+   <!-- <div class="home-btn"></div>-->
+    <div class="share-btn"></div>
+</div>
+
+
+<!--内容区-->
+<div class="content">
+    <div class="container">
+
+        <div class="content-top-text">
+            <h1>如果有人能改变儿童的一生，请记住他们的名字</h1>
+            <p>在我国，新生儿患有唇腭裂的几率是1/600，在一些医疗条件欠缺、对产检不够重视的中西部地区，这个概率可能更高。唇腭裂除了对孩子的外表带来缺陷，还会产生一系列的生理功能障碍，最常见的就是婴儿无法正常吸食母乳，从而导致营养不良，影响生长发育。<br/>“微笑行动”就是专为这些孩子提供免费治疗的慈善项目。<br/>
+                从2015年起，“微笑行动”公益项目连续3年获得Sephora丝芙兰品牌的支持。从资阳、德江、雅安到本站泸州，Sephora丝芙兰共计帮助了超过500名唇腭裂患儿完成手术。<a target="_blank" href="javascript:;">[详情]</a></p>
+        </div>
+        <div class="content-bannerBox">
+            <div class="banner-top">
+                <img class="banner-top-logo" src="img/smile-logo.png"/>
+                <span></span>
+                <h2>2017丝芙兰微笑公益行动-泸州站</h2>
+                <div class="line"></div>
+            </div>
+            <div class="player">
+                <ul>
+                    <li>
+                        <img src="img/swiper-slide1.jpg" alt="图片"/>
+                        <div class="swiperSlide-text">
+                            <p>在泸州的每天都有三十多位患儿接受手术。很多孩子一进手术室就开始哭嚎，为麻醉工作造成很大困难...在泸州的每天都有三十多位患儿接受手术。很多孩子一进手术室就开始哭嚎，为麻醉工作造成很大困难在泸州的每天都有三十多位患儿接受手术。很多孩子一进手术室就开始哭嚎，为麻醉工作造成很大困难在泸州的每天都有三十多位患儿接受手术。很多孩子一进手术室就开始哭嚎，为麻醉工作造成很大困难</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/swiper-slide1.jpg" alt="图片"/>
+                        <div class="swiperSlide-text">
+                            <p>在泸州的每天都有三十多位患儿接受手术。很多孩子一进手术室就开始哭嚎，为麻醉工作造成很大困难...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/swiper-slide1.jpg" alt="图片"/>
+                        <div class="swiperSlide-text">
+                            <p>在泸州的每天都有三十多位患儿接受手术。很多孩子一进手术室就开始哭嚎，为麻醉工作造成很大困难...</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="javascript:void(0);" class="prev"></a>
+                <a href="javascript:void(0);" class="next"></a>
+            </div>
+        </div>
+        <div class="long-line"></div>
+        <div class="content-bottomBox">
+            <div class="volunteer">
+                <img src="img/volunteer1.jpg" alt="志愿者"/>
+                <div class="content-bottomBox-textBox">
+                    <h2>你能改变的远比想象的更多</h2>
+                    <p>6月22日，来自海内外60多名志愿者集结四川泸州。他们拥有不同的职业和身份，却为了同一个目标来到这里：为患有唇腭裂的贫困儿童提供免费治疗...<a target="_blank" href="javascript:;">[详细]</a></p>
+                </div>
+            </div>
+            <div class="advertisement">
+                <div class="content-bottomBox-textBox">
+                    <h2>夏日炎炎，微笑不减，米妮邀请您加入美力传递！</h2>
+                    <p>今年6月在四川泸州举行的微笑公益活动中，丝芙兰联手微笑明天慈善公益基金会在4天之内免费为周边贫困地区腭裂儿童...<a target="_blank" href="javascript:;">[详细]</a></p>
+                </div>
+                <img src="img/advertisement.jpg"/>
+                <a href="javascript:;" class="clickBuy-btn"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer区-->
+<div class="footer">
+    <p><a href="javascript:;">凤凰新媒体介绍</a><i></i><a href="javascript:;">投资者关系 Investor Relations</a><i></i><a href="javascript:;">广告服务</a><i></i><a href="javascript:;">城征英才</a><i></i><a href="javascript:;">保护隐私权</a><i></i><a href="javascript:;">免责条款</a><i></i><a href="javascript:;">意见反馈</a><i></i><a href="javascript:;">凤凰卫视介绍</a><br/>凤凰新媒体 版权所有<br/>Copyright © 2013 Phoenix New Media Limited All Rights Reserved.</p>
+</div>
+
+
+<!--分享到qq或微博，或豆瓣js-->
+<script type="text/javascript">
+    var j = jQuery.noConflict();
+    var snsName='';
+    var thelink='http://www.ifeng.com';
+    var thetitle='分享的内容。。。。';
+    var thePic='http://y1.ifengimg.com/f66684877c73e359/2014/0603/rdn_538db03211e1e.jpg';
+    var width=600;
+    var height=560;
+
+    j(function(){
+        j('.share a').click(function(){
+            snsName = j(this).attr('rel');
+            shareInner(snsName,thelink,thetitle,thePic,width,height);
+        })
+
+    })
+    function shareInner(snsName,thelink,thetitle,thePic,width,height){
+        var ds_tsina = 'http://v.t.sina.com.cn/share/share.php?url=' + encodeURI(thelink) + '&title=' + encodeURIComponent(thetitle) +'&pic=' + encodeURI(thePic);
+        var ds_tqq = 'http://v.t.qq.com/share/share.php?title=' + encodeURIComponent(thetitle) + '&url=' + encodeURI(thelink) + '&site=""' + '&pic=' + encodeURI(thePic);
+        var ds_renren = 'http://share.renren.com/share/buttonshare?link=' + encodeURI(thelink) + '&title=' + encodeURIComponent(thetitle);
+        var ds_qzone = 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+ encodeURIComponent(thelink)+ '&title='+encodeURIComponent(thetitle)+'&pics=' + encodeURI(thePic);
+        var ds_douban = ' http://www.douban.com/recommend/?url='+encodeURIComponent(thelink)+ '&title='+encodeURIComponent(thetitle);
+        var param = ['toolbar=0,status=0,resizable=1,width=' + width + ',height=' + height + ',left=',(screen.width-width)/2,',top=',(screen.height-height)/2].join('');
+        var windowName = '分享到';
+        var httpUrl = '';
+        if(snsName == 'sina'){
+            httpUrl = ds_tsina;
+        }else if(snsName == 'qq'){
+            httpUrl = ds_tqq;
+        }else if(snsName == 'renren'){
+            httpUrl = ds_renren;
+        }else if(snsName == 'qzone'){
+            httpUrl = ds_qzone;
+        }else if(snsName == 'douban'){
+            httpUrl = ds_douban;
+        }
+
+        window.open(httpUrl, windowName, param);
+    }
+</script>
+
+<!-- 设置头部的高度，让头部照片高度跟随屏幕的高度尺寸变化位置-->
+<script>
+    window.onload = function () {
+        (function () {
+            changeHeader();
+            window.onresize = changeHeader;
+
+            function changeHeader(){
+                var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+                var header = document.getElementById('header');
+                var topImg = document.getElementById('top-img');
+                header.style.height = clientHeight + 'px';
+                var mgTop = clientHeight/2;
+                /*topImg.style.marginTop = - mgTop + 'px';*/
+                topImg.style.marginTop = - topImg.offsetHeight/2 + 'px';
+            }
+
+        })()
+    }
+</script>
+
+
+<!--按钮js-->
+<script>
+
+    /*讲jq$转义*/
+    var jq = jQuery.noConflict();
+
+    //往下点击按钮滚动
+    jq('.down-btn').on('click',function () {
+        var doc = document.documentElement;
+        var clientHeight = window.innerHTML || document.documentElement.clientHeight || document.body.clientHeight;
+         jq('body').animate({'scrollTop':clientHeight+'px'},1000);
+         jq(doc).animate({'scrollTop':clientHeight+'px'},1000);
+       /* jq('.scrollBox').fadeIn();*/
+    })
+
+    //视频弹出层按钮
+    jq('.watchTv-btn').on('click',function () {
+        jq('.video-wrap').css('display','block');
+    })
+    jq('.video-close-btn').on('click',function () {
+        jq('.video-wrap').css('display','none');
+    });
+    jq('.return-top').on('click',function () {
+        var doc = document.documentElement;
+        jq('body').animate({'scrollTop':0},1000);
+        jq(doc).animate({'scrollTop':0},1000);
+        /*jq('.scrollBox').fadeOut();*/
+    })
+    /*分享弹出层*/
+    jq('.share-close-btn').on('click',function () {
+        jq('.share-box').css('display','none');
+    });
+    jq('.share-btn').on('click',function () {
+        jq('.share-box').css('display','block');
+    })
+    jq('.share').on('click',function () {
+        jq('.share-box').css('display','block');
+    })
+
+    //随窗口滚动的按钮
+    var clientHeight =window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    var scrollBox = document.getElementById('scrollBox');
+    window.onscroll = function () {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        var fTop =parseInt((clientHeight - scrollBox.offsetHeight)/2) + scrollTop;
+
+        if(scrollTop>clientHeight*0.6){
+            startMove(scrollBox,{opacity:100,top:fTop});
+        }else{
+            startMove(scrollBox,{opacity:0});
+        }
+
+       /* startMove(scrollBox,{top:fTop});*/
+
+    }
+    /* window.onload=function () {
+     /!*var scrollTop =document.documentElement.scrollTop;*!/
+     //var scrollTop =document.body.scrollTop;
+     /!*document.onscroll=function () {
+     console.log(scrollTop)
+     }*!/
+     var downBtn = document.getElementById('down-btn');
+     downBtn.onclick=function () {
+     if(document.documentElement.scrollTop){
+     document.documentElement.scrollTop = 200;
+     }else{
+     document.body.scrollTop= 200;
+     }
+     }
+
+     }*/
+</script>
+<!--轮播图插件-->
+<script src="js/jquery.cycle.all.js"></script>
+<!--轮播图js-->
+<script>
+    jq('.player ul').cycle({
+        fx: 'scrollHorz',
+        timeout: 4000, // 幻灯片过渡间隔，单位是毫秒 (若值为0则不自动切换)
+        pause: 1 , // 过渡的速度
+        pager: '.number',// 按钮容器元素
+        prev:'.prev',
+        next:'.next',
+        pagerEvent: 'mouseover', // 按钮驱动页面导航的事件
+        cleartype: !jq.support.opacity, // 若为true，则应用clearType修正 (专为IE提供)是否支持半透明效果
+        activePagerClass: 'active', // 当按钮链接被激活时的css类名
+        pagerAnchorBuilder: function(idx, slide) {  // 用于建立按钮超链接的回调函数:// function(index, DOMelement)
+            idx += 1;
+            return '<a href="javascript:void(0)" class="num'+idx+'">'　+ idx + '</a>';
+        }
+    });
+</script>
+
+<!--视频插件-->
+<script src="http://m1.ifengimg.com/ifeng/sources/inice_v1.js" type="text/javascript"></script>
+<script src="http://v.ifeng.com/base/include/citeswfobject.js"></script>
+<script src="http://v.ifeng.com/base/include/lianbo.js"></script>
+<script type="text/javascript">
+    var play = new PlayItems({
+        showDivId : "playerDiv",	// 播放器容器id，不传时默认值为 playerDiv
+        parentIds:"pagelist",		// 连播条目标签节点id
+        swfWidth : '930',		// 播放器宽度
+        swfHeight :'568',			// 播放器高度
+        playitemcss : "current",	// 条目播放时样式
+        autoPlay : 'true',		// 是否自动播放，默认自动播放
+        ADOrderFirst :'1',
+        playerCB:function(){
+            console.log('123');
+        }
+    });
+    play.init();
+</script>
+
+</body>
+</html>
